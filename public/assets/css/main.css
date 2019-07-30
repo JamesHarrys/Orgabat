@@ -435,6 +435,7 @@ header {
 article {
     padding: 75px;
     margin-top: 50px;
+    text-align: justify;
 }
 
 #start-btn {
@@ -527,7 +528,7 @@ article {
 }
 @media screen and (max-width: 1200px) {
     .brand {
-        left: 300px;
+        left: 42.5%;
     }
     #left-main {
         float: left;
