@@ -21,8 +21,14 @@
         </div>
         <ul>
             <a href="#" class="navbar-brand">Orgabat</a>
-            <li><a href="#">Name</a></li>
-            <li><a href="#">Accueil</a></li>
+            <li>
+                    {% if firstname == '' %}
+                        <a href="{{ path('login') }}">S'identifier</a>
+                    {% else %}
+                        <a href="#">{{ firstname }} {{ lastname }}</a>
+                    {% endif %}
+                </a></li>
+            <li><a href="/">Accueil</a></li>
             <li><a href="#">Crédits</a></li>
         </ul>
     </div>
