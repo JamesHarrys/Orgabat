@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue!{% endblock %}
+
+{% block body %}
+
+
+<body>
+    <div id="left-main">
+        <div class="brand">
+            Orgabat
+        </div>
+        <article>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi atque dicta doloremque dolores ducimus,
+            enim est facere illum laborum modi molestiae mollitia quam quidem quisquam temporibus! Accusamus atque, debitis eius est
+            eveniet exercitationem impedit natus nisi quo ratione. A ab accusantium amet blanditiis consequatur culpa cum dicta dolore
+            dolorem facere fugiat ipsam ipsum iure libero modi natus nobis nostrum quasi quidem repellat, saepe sequi sint voluptates?
+            A aliquam asperiores autem delectus eligendi enim et exercitationem hic incidunt ipsa iste laudantium magni, mollitia neque
+            nisi praesentium quos reiciendis rem reprehenderit vitae?
+            <br>
+            <div class="features feature-desc">
+                <img class="features-img" src="{{ asset('assets/images/puzzle.png') }}" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nemo!</p>
+            </div>
+            <div class="features feature-desc">
+                <img class="features-img" src="{{ asset('assets/images/wet-floor.png') }}" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, odit.</p>
+            </div>
+            <div class="features feature-desc">
+                <img class="features-img" src="{{ asset('assets/images/helmet.png') }}" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus.</p>
+            </div>
+        </article>
+
+        <footer id="footer" class="footer-area">
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright text-center">
+                                Batiment CFA Normandie - Copyright 2019
+                            </div> <!-- copyright -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- copyright-area -->
+        </footer>
+    </div>
+    <div id="right-main">
+        <input type="button" id="start-btn" class="btn" value="Commencer"><a href="{{ path('login') }}"></a>
+    </div>
+
+</body>
+
+{% endblock body %}

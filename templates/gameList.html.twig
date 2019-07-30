@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catégories{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="clear"></div>
+        <div class="gamelist">
+            <div class="category_names row">
+                <div class="categories Approvisionnement" onclick="approGameWindow()">Approvisionnement</div>
+                <div class="categories Circulation" onclick="circuGameWindow()">Circulation</div>
+                <div class="categories Communication" onclick="commGameWindow()">Communication</div>
+                <div class="categories Déplacements" onclick="deplaceGameWindow()">Déplacements</div>
+                <div class="categories Gestion" onclick="gestionGameWindow()">Gestion</div>
+                <div class="categories Gestes" onclick="gestesGameWindow()">Gestes</div>
+                <div class="categories Protection" onclick="protecGameWindow()">Protection</div>
+                <div class="categories Préparation" onclick="prepGameWIndow()">Préparation</div>
+            </div>
+            <div id="output"></div>
+        </div>
+    </div>
+{% endblock %}

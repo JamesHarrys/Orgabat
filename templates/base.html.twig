@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
+        <title>Orgabat - {% block title %}{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+
+    <body>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <a href="#" class="navbar-brand">Orgabat</a>
+            <li><a href="#">Name</a></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Crédits</a></li>
+        </ul>
+    </div>
+
+    {% block body %}{% endblock %}
+
+
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/gamelist.js') }}"></script>
+    {% block javascripts %}
+        <script>
+
+        </script>
+    {% endblock %}
+    </body>
+</html>
